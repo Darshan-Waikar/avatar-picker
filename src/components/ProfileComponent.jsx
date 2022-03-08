@@ -21,7 +21,7 @@ function ProfileComponent() {
     { src: '../Assets/avatar6.png' }]
 
     const [anchor, setAnchor] = useState(null)
-    const [prevImage, updatedImage] = useState(false)
+    const [Image, SetImage] = useState(profileImage1)
 
     const openpopover = (event) => {
 
@@ -40,10 +40,10 @@ function ProfileComponent() {
 
     const selector = () => {
 
-        updatedImage(!Boolean(prevImage))
+  
 
         var imageID = document.getElementById('avatar')
-        imageID.src = { profileImage2 }
+        imageID.src = SetImage(profileImage2)
 
         console.log("CLICKED")
 
@@ -59,7 +59,7 @@ function ProfileComponent() {
 
             <div className='Profile_view'>
 
-                <img src={profileImage2} id='avatar' className='Profile' onClick={openpopover} onMouseOver={hover} />
+                <img src={Image} id='avatar' className='Profile' onClick={openpopover} onMouseOver={hover} />
 
 
 
