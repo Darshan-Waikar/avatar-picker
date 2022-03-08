@@ -22,6 +22,7 @@ function ProfileComponent() {
 
     const [anchor, setAnchor] = useState(null)
     const [Image, SetImage] = useState(profileImage1)
+    const imageID = document.getElementById('avatar')
 
     const openpopover = (event) => {
 
@@ -38,12 +39,78 @@ function ProfileComponent() {
 
     }
 
-    const selector = () => {
+    const selector2 = () => {
 
-  
 
-        var imageID = document.getElementById('avatar')
+
         imageID.src = SetImage(profileImage2)
+
+        console.log("CLICKED")
+
+
+
+
+
+    }
+    const selector1 = () => {
+
+
+
+
+        imageID.src = SetImage(profileImage1)
+
+        console.log("CLICKED")
+
+
+
+
+
+    }
+    const selector3 = () => {
+
+
+
+        imageID.src = SetImage(profileImage3)
+
+        console.log("CLICKED")
+
+
+
+
+
+    }
+    const selector4 = () => {
+
+
+
+
+        imageID.src = SetImage(profileImage4)
+
+        console.log("CLICKED")
+
+
+
+
+
+    }
+    const selector5 = () => {
+
+
+
+
+        imageID.src = SetImage(profileImage5)
+
+        console.log("CLICKED")
+
+
+
+
+
+    }
+    const selector6 = () => {
+
+
+        imageID.src = SetImage(profileImage6)
 
         console.log("CLICKED")
 
@@ -80,16 +147,19 @@ function ProfileComponent() {
 
 
 
-                <Typography variant='h6'>
-                    Hello
+                <Typography variant='h6' align='center'>
+                    <div className='fontFamily'>
+
+                        Choose Your Avatar
+                    </div>
                 </Typography>
 
-                <img src={profileImage1} />
-                <img src={profileImage2} onClick={selector} />
-                <img src={profileImage3} />
-                <img src={profileImage4} />
-                <img src={profileImage5} />
-                <img src={profileImage6} />
+                <img src={profileImage1} className='preview1' onClick={selector1} />
+                <img src={profileImage2} className='preview2' onClick={selector2} />
+                <img src={profileImage3} className='preview3' onClick={selector3} />
+                <img src={profileImage4} className='preview4' onClick={selector4} />
+                <img src={profileImage5} className='preview5' onClick={selector5} />
+                <img src={profileImage6} className='preview6' onClick={selector6} />
 
 
 

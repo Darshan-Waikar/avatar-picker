@@ -1,3 +1,49 @@
 .Profile_view {}
 
-.Profile {}
+.Profile {
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+.fontFamily {
+    font-family: 'Poppins', sans-serif;
+}
+
+.preview1 {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+.preview2 {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+.preview3 {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+.preview4 {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+.preview5 {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+.preview6 {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
