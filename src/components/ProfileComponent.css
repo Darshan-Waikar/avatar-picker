@@ -8,8 +8,22 @@
     width: 100px;
 }
 
+.Profile:hover {}
+
 .fontFamily {
     font-family: 'Poppins', sans-serif;
+}
+
+.phase1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phase2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .preview1 {

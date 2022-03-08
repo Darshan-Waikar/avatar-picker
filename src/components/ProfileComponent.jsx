@@ -154,14 +154,22 @@ function ProfileComponent() {
                     </div>
                 </Typography>
 
-                <img src={profileImage1} className='preview1' onClick={selector1} />
-                <img src={profileImage2} className='preview2' onClick={selector2} />
-                <img src={profileImage3} className='preview3' onClick={selector3} />
-                <img src={profileImage4} className='preview4' onClick={selector4} />
-                <img src={profileImage5} className='preview5' onClick={selector5} />
-                <img src={profileImage6} className='preview6' onClick={selector6} />
+                <div className='popoverAlign'>
 
+                    <div className='phase1'>
+                        <img src={profileImage1} className='preview1' onClick={selector1} />
+                        <img src={profileImage2} className='preview2' onClick={selector2} />
+                        <img src={profileImage3} className='preview3' onClick={selector3} />
+                    </div>
+                    <div className='phase2'>
 
+                        <img src={profileImage4} className='preview4' onClick={selector4} />
+                        <img src={profileImage5} className='preview5' onClick={selector5} />
+                        <img src={profileImage6} className='preview6' onClick={selector6} />
+
+                    </div>
+
+                </div>
 
             </Popover>
 
