@@ -120,7 +120,7 @@ function ProfileComponent() {
 
     }
     return (
-        <div className='Profile'>
+        <div className='AvatarPicker'  >
 
 
 
